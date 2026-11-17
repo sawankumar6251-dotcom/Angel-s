@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8dce8"/><stop offset="1" stop-color="#fff5f8"/></linearGradient></defs>
+<rect width="600" height="750" fill="url(#g)"/>
+<circle cx="300" cy="300" r="100" fill="#efc0d3" opacity=".65"/>
+<path d="M300 390 C180 300 200 220 260 240 C285 248 300 275 300 275 C300 275 315 248 340 240 C400 220 420 300 300 390Z" fill="#c77c9e"/>
+<text x="300" y="520" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="#96516f">A little memory</text>
+<text x="300" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#ad7c91">Add your photo here ♡</text>
+</svg>

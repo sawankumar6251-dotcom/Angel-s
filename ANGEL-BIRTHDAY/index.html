@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fce7f0">
+  <meta name="description" content="A little birthday world made with love for Anjali, my Angel.">
+  <title>For My Angel, Anjali ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient-orb orb-one"></span><span class="ambient-orb orb-two"></span>
+    <div id="floaties"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Angel's birthday home"><span class="brand-mark">♡</span> a little world for Angel</a>
+    <div class="top-right"><span id="progressText">A little surprise · 1 / 10</span><div class="progress-track"><span id="progressBar"></span></div></div>
+  </header>
+
+  <main>
+    <section class="screen active hero-screen" data-screen="0">
+      <div class="hero-decoration deco-star">✦</div><div class="hero-decoration deco-heart">♡</div>
+      <div class="hero-copy">
+        <p class="eyebrow">A little something made just for you</p>
+        <h1>For my <em>Angel</em>,<br><span>Anjali</span></h1>
+        <p class="lead">Today, a tiny corner of the internet belongs entirely to you.</p>
+        <button class="primary-btn" id="beginBtn">Open your surprise <span>♡</span></button>
+        <p class="tiny-note">Made with a whole lot of love · from Sawan</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="halo"></div><div class="hero-heart">♡</div>
+        <div class="butterfly butterfly-a">🦋</div><div class="butterfly butterfly-b">🦋</div>
+        <div class="mini-spark spark-a">✧</div><div class="mini-spark spark-b">✦</div>
+        <div class="hero-caption">to the girl who makes<br>ordinary days feel special</div>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="1">
+      <div class="section-heading"><p class="eyebrow">It's your day, sunshine</p><h2>Happy Birthday,<br><em>my Angel!</em></h2><p class="lead">Aaj ka din tumhare naam. So let's make a few little memories, shall we?</p></div>
+      <div class="birthday-stage" id="birthdayStage">
+        <div class="balloon balloon-pink">♡</div><div class="balloon balloon-lilac">✦</div><div class="balloon balloon-peach">♡</div>
+        <div class="cake-stand"><div class="cake"><div class="icing"></div><div class="cake-line"></div><div class="cake-bottom"></div><div class="candle">🕯️</div></div></div>
+        <div class="stage-sparkle">✧　✦　✧</div>
+      </div>
+      <p class="center-note">I hope today gives you a hundred reasons to smile. ♡</p>
+      <button class="primary-btn next-btn">Let's find your surprises <span>→</span></button>
+    </section>
+
+    <section class="screen" data-screen="2">
+      <div class="section-heading"><p class="eyebrow">A little gift, a little feeling</p><h2>Pick a little <em>present</em></h2><p class="lead">Har box ke andar tumhare liye ek chhoti si baat chhupi hai.</p></div>
+      <div class="gift-grid" id="giftGrid"></div>
+      <p class="center-note" id="giftStatus">Open all five gifts to unlock the next surprise.</p>
+      <button class="primary-btn next-btn locked-next" id="giftNext" disabled>Continue <span>→</span></button>
+    </section>
+
+    <section class="screen" data-screen="3">
+      <div class="section-heading"><p class="eyebrow">Pop a little happiness</p><h2>Catch these <em>feelings</em></h2><p class="lead">Tap each balloon. I hid a little message inside every one.</p></div>
+      <div class="balloon-field" id="balloonField"></div>
+      <p class="center-note" id="balloonStatus">0 of 7 popped · you're doing great, Angel!</p>
+      <button class="primary-btn next-btn locked-next" id="balloonNext" disabled>See what's next <span>→</span></button>
+    </section>
+
+    <section class="screen" data-screen="4">
+      <div class="section-heading"><p class="eyebrow">A tiny confession</p><h2>Flirting with<br><em>my Angel</em></h2><p class="lead">Warning: cheesy lines ahead. But every single one comes with a smile. 😌</p></div>
+      <div class="pickup-card">
+        <span class="quote-mark">“</span><p id="pickupLine" class="pickup-line">Tum Google ho kya? Meri har search tum par aakar khatam hoti hai. ♡</p>
+        <span class="pickup-count" id="pickupCount">01 / 15</span>
+      </div>
+      <button class="primary-btn" id="newLineBtn">One more line, please <span>♡</span></button>
+      <p class="center-note">Swipe nahi, bas tap karo — next line ready hai.</p>
+      <button class="text-btn next-btn">I can handle more romance →</button>
+    </section>
+
+    <section class="screen" data-screen="5">
+      <div class="section-heading"><p class="eyebrow">Little things, big feelings</p><h2>Reasons I love <em>you</em></h2><p class="lead">Tap a heart. There are a few things I never want you to forget.</p></div>
+      <div class="reason-grid" id="reasonGrid"></div>
+      <p class="center-note">Some reasons are simple. Some are impossible to put into words.</p>
+      <button class="primary-btn next-btn">Our story <span>→</span></button>
+    </section>
+
+    <section class="screen" data-screen="6">
+      <div class="section-heading"><p class="eyebrow">One date, a special beginning</p><h2>Our little <em>story</em></h2><p class="lead">Some dates quietly become your favourite chapter.</p></div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <article class="timeline-item"><span class="timeline-dot">♡</span><div class="timeline-card"><p class="eyebrow">17 January 2026</p><h3>A special beginning</h3><p>And just like that, a new chapter began. I'm grateful this story has you in it.</p></div></article>
+        <article class="timeline-item"><span class="timeline-dot">✦</span><div class="timeline-card"><p class="eyebrow">Every day after</p><h3>More little moments</h3><p>More laughs, more conversations, more memories waiting to happen. The best pages are still ahead.</p></div></article>
+      </div>
+      <p class="center-note">Our story is still being written. ♡</p>
+      <button class="primary-btn next-btn">Open our memories <span>→</span></button>
+    </section>
+
+    <section class="screen" data-screen="7">
+      <div class="section-heading"><p class="eyebrow">A few moments worth keeping</p><h2>Our little <em>memories</em></h2><p class="lead">A tiny gallery of us. Tap any photo to see it a little closer.</p></div>
+      <div class="photo-grid" id="photoGrid"></div>
+      <p class="photo-tip">Replace the sample slots with your favourite photos together. ♡</p>
+      <button class="primary-btn next-btn">A letter for you <span>→</span></button>
+    </section>
+
+    <section class="screen letter-screen" data-screen="8">
+      <div class="section-heading"><p class="eyebrow">A little note from my heart</p><h2>To my <em>Angel</em></h2><p class="lead">There's something I've been wanting to tell you...</p></div>
+      <button class="envelope" id="envelopeBtn" aria-label="Open your letter"><span class="envelope-heart">♡</span><span class="envelope-label">Tap to open</span></button>
+      <article class="letter-paper hidden" id="letterPaper">
+        <p class="letter-date">For Anjali, on your special day</p>
+        <h3>My dearest Angel,</h3>
+        <p>Happy Birthday, meri Angel. ❤️</p>
+        <p>I hope you always see yourself with the same kindness and love that I see in you. Tumhari smile, tumhari baatein, aur tumhara hona — these little things make my days brighter in ways I can't always explain.</p>
+        <p>Thank you for being a part of my life and for making 17 January 2026 such a special date in my heart. I don't know what every tomorrow will look like, but I do know that I want to keep making beautiful memories with you.</p>
+        <p>Keep smiling, keep shining, and never forget how special you are. Aaj aur hamesha, I wish you happiness, peace, and all the little things your heart wishes for.</p>
+        <p class="letter-sign">With all my love,<br><strong>Your Sawan ❤️</strong></p>
+      </article>
+      <button class="primary-btn next-btn" id="letterNext">One last surprise <span>→</span></button>
+    </section>
+
+    <section class="screen" data-screen="9">
+      <div class="section-heading"><p class="eyebrow">Make a wish, birthday girl</p><h2>A wish just for <em>you</em></h2><p class="lead">Tap the candles to blow them out. Make your wish before you do. ✨</p></div>
+      <div class="final-cake-wrap">
+        <div class="cake-candles"><button class="flame" aria-label="Blow out candle 1">🔥</button><button class="flame" aria-label="Blow out candle 2">🔥</button><button class="flame" aria-label="Blow out candle 3">🔥</button></div>
+        <div class="final-cake"><div class="cake-top"></div><div class="cake-middle"></div><div class="cake-base"></div></div>
+        <div class="cake-plate"></div>
+      </div>
+      <p class="center-note" id="candleStatus">3 little wishes waiting to be made...</p>
+      <div class="final-message hidden" id="finalMessage"><p class="eyebrow">A wish for my favourite person</p><h2>May your smile<br>never <em>fade</em>.</h2><p>Happy Birthday, Anjali. The world is a little lovelier with you in it. ♡</p><button class="primary-btn" id="finishBtn">One final thing <span>♡</span></button></div>
+    </section>
+
+    <section class="screen ending-screen" data-screen="10">
+      <div class="ending-glow"></div><p class="eyebrow">And a little reminder...</p>
+      <h1>Happy Birthday,<br><em>my Angel.</em></h1>
+      <p class="ending-line">You're not just my favourite person,<br>you're my favourite feeling.</p>
+      <div class="ending-heart">♡</div>
+      <p class="ending-sign">Forever your Sawan ❤️</p>
+      <p class="tiny-note">This little world will always be here for you.</p>
+      <button class="outline-btn" id="replayBtn">Experience it again ↺</button>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal" id="messageModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card"><button class="modal-close" data-close="true" aria-label="Close">×</button><span class="modal-icon" id="modalIcon">♡</span><p class="eyebrow">A little message for you</p><p id="modalMessage"></p><button class="small-btn" data-close="true">Aww, next ♡</button></div>
+  </div>
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button id="lightboxClose" aria-label="Close photo">×</button><img id="lightboxImg" alt="A memory"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
